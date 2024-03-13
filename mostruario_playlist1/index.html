@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist 01 - HTML-CSS</title>
+    <link rel="shortcut icon" href="logo_fivecon.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: azure;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apresentação</h1>
+    
+    <h2>Para criar títulos, usar h1, h2, h3</h2>
+    <p>Colocar parágrafo usar p</p>
+    <p>Para ter quebra <br>de linha usar "br"</p>
+
+    <h2>Colocar imagem</h2>
+    <p>Videos aulas foi passado um editor chamado GIMP</p>
+    <img src="logo_iohub.png" alt="">
+
+    <h2>Colocar icone exibido na aba do site</h2>
+    <p>Usar o link:favicon</p>
+
+    <h2>Hierarquia dos títulos</h2>
+    <p>Basicamento saber usar o h1,h2,h3, etc... respeitando sua hierarquia</p>
+
+    <h2>Formatação</h2>
+    <h3>Foram apresentado de duas formas, a semântica(que da significado) e a não semantica(que é apenas visual)</h3>
+    <h4>Negrito</h4>
+    <p>Não semântica: <b>Usado a tag "b"</b></p>
+    <p>Semantica: <strong>Usado a tag "strong"</strong></p>
+
+    <h4>Itálico</h4>
+    <p>Não semântica: <i>Usado a tag "i"</i></p>
+    <p>Semântica: <em>Usado a tag "em"</em><p>
+
+    <h4>Texto grande</h4>
+    <p>Utilizando a tag <big>"big"</big></p>
+
+    <h4>Texto pequeno</h4>
+    <p>Utilizando a tag <small>"small"</small></p>
+
+    <h4>Texto deletado</h4>
+    <p>Utilizando a tag "del", por exemplo <del>o texto fica assim</del></p>
+
+    <h4>Texto inserido</h4>
+    <p>Utilizando a tag "ins", a linha fica <ins>sublinhada</ins></p>
+
+    <h4>Texto sobrescrito</h4>
+    <p>Utilizando a tag "sup", é muito comum usar em números, por exemplo: 2 <sup>3</sup>+1, o número 3 é o sobrescrito</p>
+
+    <h4>Texto subscrito</h4>
+    <p>Utilizando a tag "sub", é utilizado em números e letras, por exemplo: 2 H<sub>2</sub>O, o número 2 é o subscrito</p>
+
+    <h4>Tag code</h4>
+    <p><code>A tag code deixa uniformizado o espaçamento da escrita</code></p>
+
+    <h4>Tag pré</h4>
+    <p>Utilizando a tag "pre" conseguimos deixar da forma em que digitamos no código, exemplo:</p>
+    <pre>
+        <code>
+        num = int(input('Digite um numero:'))
+        if num % 2:
+            print(f'O numero {num} é par')
+        else:
+            print(f'O numero é impar')
+        </code>
+    </pre>
+
+    <h4>Citações</h4>
+    <p>Para criar citações, colocar a tag <q>q</q></p>
+
+    <h4>Blockquote</h4>
+    <blockquote>Utilizando a tag "blockquote, ele transforma em bloco de citação</blockquote>
+    <p>Colocando cite="URL" no primeiro "<>", consegue registrar a fonte </p>
+
+    <h4>Abreviações</h4>
+    <p><abbr title="exemplo">Utilizando a tag abbr title cria significado oculto</abbr></p>
+    
+    <h2>Listas</h2>
+    <h3>Listas ordenadas</h3>
+
+    <h4>Utilizando OL</h4>
+    <p>Colocando type dentro da para alterar formas</p>
+    <ol>
+        <li>Utilizando "A", fica em ordem alfabetica</li>
+        <li>Utilizando "1", fica em ordem númerica</li>
+        <li>Utilizando "I", fica em ordem romana</li>
+    </ol>
+
+    <h3>Listas não ordenadas</h3>
+    <h4>Utilizando UL</h4>
+    <p>Colocando type dentro da para alterar formas</p>
+    <ul type="square">
+        <li>Utilizando "disc", fica em com a bolinha preta preenchida</li>
+        <li>Utilizando "circle", fica em com a bolinha preta não preenchida</li>
+        <li>Utilizando "square", fica em com um quadrado preto preenchido</li>
+    </ul>
+
+    <h3>Lista de definição - DL</h3>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+    </dl>
+
+    <h2>Links</h2>
+    <h3>Criar link</h3>
+    <p>Utilizando a tag "a", ele vincula a uma outra pagina, porem ela sobrepoem a atual</p>
+    <p><a href="https://www.iohub.digital/">EXEMPLO</a></p>
+
+    <p>Para não sobrepor é necessario colocar na frente target="_blank" rel"external"
+    <p><a href="https://www.iohub.digital/"target="_blank"rel="external">EXEMPLO</a></p></p>
+
+    <p>Para ficar navegando de pagina em pagina, colocar no lugar do "external", "next"</p>
+    <p>Ou para voltar a paginas principais "prev"</p>
+
+    <h3>Navegar em outras paginas</h3>
+    <p><a href="pagina02.html">IR PARA PAGINA 02</a></p>
+
+    <h3>Abrir arquivos</h3>
+    <p>Da para fazer com PDF</p>
+    <p>Com arquivo ZIP ele baixa (inserir download="urlproposta" type="application/zip"), <a href="ESTAGIO.zip" download="ESTAGIO.zip" type="application/zip">EXEMPLO</a></p>
+    
+    <h2>Inserir audio e video</h2>
+    <p>Para inserir é igual imagem, usar "audio" e adicionar "controls autoplay"</p>
+    <audio src="Voyage Voyage-Desireless.mp3"controls autoplay></audio>
+    <p>Video utilizar "video"</p>
+    <video src="videos.mp4"controls autoplay></video>
+    <p>Video do Youtube clicar em compartilhar e ir em incorporar e colar o código aqui</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9cIWcoQONfk?si=rTVgNI4GWlTgp_b5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h3>Estilos em CSS</h3>
+    <h4>Estilos INLINE</h4>
+    <p style="color: rgb(254, 254, 254); background-color: black;">Consiste basicamento em criar estilos individuais linha a linha</p>
+    <h4>Estilo INTERNO</h4>
+    <p>Consiste em colocar no "head", fazendo com que funcione na tela inteira</p>
+    <h4>Estilo EXTERNO</h4>
+    <p>Consiste em ter um arquivo só com as configurações de estilo e vincular ela ao arquivo principal</p>
+    <p>Usa o link:css, e como exemplo sera na <a href="pagina02.html">pagina 2</a></p>
+</body>
+</html>
